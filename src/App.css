@@ -3,20 +3,9 @@
 .brand-buttons-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 buttons per row */
-  gap: 10px;
+  gap: 6px;
 
 }
-
-.btn-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.btn-brand-text {
-  margin-right: 8px; /* Optional margin between brand text and logo */
-}
-
 
 .btn {
   padding: 10px;
@@ -27,12 +16,6 @@
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
-}
-
-.btn-logo {
-  display: block;
-  margin: 0 auto;
-  height: 18px;
 }
 
 a {

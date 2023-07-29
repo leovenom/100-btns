@@ -19,10 +19,7 @@ function BrandButton({ brand, logo, link }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="btn-content">
-        <span className="btn-brand-text">{brand}</span>
-        <img src={logo} className="btn-logo" alt={brand} />
-      </div>
+      {brand}
     </a>
   );
 }

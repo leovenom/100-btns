@@ -8,12 +8,7 @@ function LandingPage() {
     <div className="landing-page">
       <div className="brand-buttons-container">
         {brands.map((brand, index) => (
-          <BrandButton
-            key={index}
-            brand={brand.name}
-            logo={brand.logo}
-            link={brand.link}
-          />
+          <BrandButton key={index} brand={brand.name} link={brand.link} />
         ))}
       </div>
     </div>
