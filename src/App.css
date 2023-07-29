@@ -1,38 +1,666 @@
-.App {
+/* Default styles */
+
+.brand-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 buttons per row */
+  gap: 10px;
+
+}
+
+.btn-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn-brand-text {
+  margin-right: 8px; /* Optional margin between brand text and logo */
+}
+
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.btn-logo {
+  display: block;
+  margin: 0 auto;
+  height: 18px;
+}
+
+a {
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
   text-align: center;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Tablet styles */
+@media (max-width: 768px) {
+  .brand-buttons-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Mobile styles */
+@media (max-width: 480px) {
+  .brand-buttons-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
+  }
+}
+
+
+/* 1. Apple */
+.btn-apple {
+  background-color: #000000;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* 2. Google */
+.btn-google {
+  background-color: #4285F4;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 3. Amazon */
+.btn-amazon {
+  background-color: #FF9900;
+  color: black;
+}
+
+/* 4. Microsoft */
+.btn-microsoft {
+  background-color: #666666;
+  color: white;
+}
+
+/* 5. Samsung */
+.btn-samsung {
+  background-color: #1428A0;
+  color: white;
+}
+
+/* 6. Toyota */
+.btn-toyota {
+  background-color: #000000;
+  color: white;
+}
+
+/* 7. Facebook */
+.btn-facebook {
+  background-color: #1877F2;
+  color: white;
+}
+
+/* 8. Tesla */
+.btn-tesla {
+  background-color: #E82127;
+  color: white;
+}
+
+/* 9. McDonald's */
+.btn-mcdonalds {
+  background-color: #E20613;
+  color: white;
+}
+
+/* 10. Coca-Cola */
+.btn-coca-cola {
+  background-color: #FE001A;
+  color: white;
+}
+
+/* 11. Intel */
+.btn-intel {
+  background-color: #0071C5;
+  color: white;
+}
+
+/* 12. IBM */
+.btn-ibm {
+  background-color: #006699;
+  color: white;
+}
+
+/* 13. Disney */
+.btn-disney {
+  background-color: #F9DD16;
+  color: black;
+}
+
+/* 14. Nike */
+.btn-nike {
+  background-color: #000000;
+  color: white;
+}
+
+/* 15. Pepsi */
+.btn-pepsi {
+  background-color: #004883;
+  color: white;
+}
+
+/* 16. Starbucks */
+.btn-starbucks {
+  background-color: #00704A;
+  color: white;
+}
+
+/* 17. Adidas */
+.btn-adidas {
+  background-color: #000000;
+  color: white;
+}
+
+/* 18. Netflix */
+.btn-netflix {
+  background-color: #E50914;
+  color: white;
+}
+
+/* 19. Walmart */
+.btn-walmart {
+  background-color: #007DC6;
+  color: white;
+}
+
+/* 20. Canon */
+.btn-canon {
+  background-color: #BC0024;
+  color: white;
+}
+/* 21. Sony */
+.btn-sony {
+  background-color: #000000;
+  color: white;
+}
+
+/* 22. Mercedes-Benz */
+.btn-mercedes-benz {
+  background-color: #202020;
+  color: white;
+}
+
+/* 23. BMW */
+.btn-bmw {
+  background-color: #003A6E;
+  color: white;
+}
+
+/* 24. Nestle */
+.btn-nestle {
+  background-color: #004B25;
+  color: white;
+}
+
+/* 25. General Electric */
+.btn-general-electric {
+  background-color: #00B5E2;
+  color: white;
+}
+
+/* 26. Ford */
+.btn-ford {
+  background-color: #003399;
+  color: white;
+}
+
+/* 27. Levi's */
+.btn-levis {
+  background-color: #E32D40;
+  color: white;
+}
+
+/* 28. KFC */
+.btn-kfc {
+  background-color: #B00A2C;
+  color: white;
+}
+
+/* 29. Prada */
+.btn-prada {
+  background-color: #B3A569;
+  color: white;
+}
+
+/* 30. Zara */
+.btn-zara {
+  background-color: #000000;
+  color: white;
+}
+
+/* 31. Heineken */
+.btn-heineken {
+  background-color: #00A100;
+  color: white;
+}
+
+/* 32. Visa */
+.btn-visa {
+  background-color: #1A1F71;
+  color: white;
+}
+
+/* 33. MasterCard */
+.btn-mastercard {
+  background-color: #EB001B;
+  color: white;
+}
+
+/* 34. Oracle */
+.btn-oracle {
+  background-color: #F80000;
+  color: white;
+}
+
+/* 35. PayPal */
+.btn-paypal {
+  background-color: #003087;
+  color: white;
+}
+
+/* 36. Lenovo */
+.btn-lenovo {
+  background-color: #E2231A;
+  color: white;
+}
+
+/* 37. LG */
+.btn-lg {
+  background-color: #C8102E;
+  color: white;
+}
+
+/* 38. FedEx */
+.btn-fedex {
+  background-color: #660099;
+  color: white;
+}
+
+/* 39. UPS */
+.btn-ups {
+  background-color: #351C15;
+  color: white;
+}
+
+/* 40. eBay */
+.btn-ebay {
+  background-color: #E53238;
+  color: white;
+}
+/* 41. Shell */
+.btn-shell {
+  background-color: #FF0921;
+  color: white;
+}
+
+/* 42. BP */
+.btn-bp {
+  background-color: #00A950;
+  color: white;
+}
+
+/* 43. Chevron */
+.btn-chevron {
+  background-color: #FF6C36;
+  color: white;
+}
+
+/* 44. ExxonMobil */
+.btn-exxonmobil {
+  background-color: #ED1C24;
+  color: white;
+}
+
+/* 45. Volkswagen */
+.btn-volkswagen {
+  background-color: #004094;
+  color: white;
+}
+
+/* 46. Audi */
+.btn-audi {
+  background-color: #000000;
+  color: white;
+}
+
+/* 47. Porsche */
+.btn-porsche {
+  background-color: #B12B28;
+  color: white;
+}
+
+/* 48. Philips */
+.btn-philips {
+  background-color: #0E3574;
+  color: white;
+}
+
+/* 49. Twitter */
+.btn-twitter {
+  background-color: #1DA1F2;
+  color: white;
+}
+
+/* 50. Instagram */
+.btn-instagram {
+  background-color: #C13584;
+  color: white;
+}
+
+/* 51. LinkedIn */
+.btn-linkedin {
+  background-color: #0077B5;
+  color: white;
+}
+
+/* 52. TikTok */
+.btn-tiktok {
+  background-color: #000000;
+  color: white;
+}
+
+/* 53. Spotify */
+.btn-spotify {
+  background-color: #1DB954;
+  color: white;
+}
+
+/* 54. Zoom */
+.btn-zoom {
+  background-color: #2D8CFF;
+  color: white;
+}
+
+/* 55. Snapchat */
+.btn-snapchat {
+  background-color: #FFFC00;
+  color: black;
+}
+
+/* 56. Subway */
+.btn-subway {
+  background-color: #00543D;
+  color: white;
+}
+
+/* 57. Dominos */
+.btn-dominos {
+  background-color: #0B648F;
+  color: white;
+}
+
+/* 58. Budweiser */
+.btn-budweiser {
+  background-color: #ED1944;
+  color: white;
+}
+
+/* 59. Red Bull */
+.btn-red-bull {
+  background-color: #000000;
+  color: white;
+}
+
+/* 60. Gucci */
+.btn-gucci {
+  background-color: #000000;
+  color: white;
+}
+/* 61. Louis Vuitton */
+.btn-louis-vuitton {
+  background-color: #4A4743;
+  color: white;
+}
+
+/* 62. Rolex */
+.btn-rolex {
+  background-color: #006241;
+  color: white;
+}
+
+/* 63. Omega */
+.btn-omega {
+  background-color: #3A3A3B;
+  color: white;
+}
+
+/* 64. Cartier */
+.btn-cartier {
+  background-color: #B01226;
+  color: white;
+}
+
+/* 65. Calvin Klein */
+.btn-calvin-klein {
+  background-color: #000000;
+  color: white;
+}
+
+/* 66. Dolce & Gabbana */
+.btn-dolce-e-gabbana {
+  background-color: #000000;
+  color: white;
+}
+
+/* 67. Burberry */
+.btn-burberry {
+  background-color: #000000;
+  color: white;
+}
+
+/* 68. Chanel */
+.btn-chanel {
+  background-color: #000000;
+  color: white;
+}
+
+/* 69. Harley-Davidson */
+.btn-harley-davidson {
+  background-color: #C9302C;
+  color: white;
+}
+
+/* 70. Virgin */
+.btn-virgin {
+  background-color: #C3092D;
+  color: white;
+}
+
+/* 71. Ferrari */
+.btn-ferrari {
+  background-color: #FF2800;
+  color: white;
+}
+
+/* 72. Lamborghini */
+.btn-lamborghini {
+  background-color: #DDB321;
+  color: white;
+}
+
+/* 73. Aston Martin */
+.btn-aston-martin {
+  background-color: #006F62;
+  color: white;
+}
+
+/* 74. Uber */
+.btn-uber {
+  background-color: #000000;
+  color: white;
+}
+
+/* 75. Airbnb */
+.btn-airbnb {
+  background-color: #FF5A5F;
+  color: white;
+}
+
+/* 76. Dropbox */
+.btn-dropbox {
+  background-color: #007EE5;
+  color: white;
+}
+
+/* 77. Quora */
+.btn-quora {
+  background-color: #B92B27;
+  color: white;
+}
+
+/* 78. Reddit */
+.btn-reddit {
+  background-color: #FF4500;
+  color: white;
+}
+
+/* 79. Slack */
+.btn-slack {
+  background-color: #4A154B;
+  color: white;
+}
+
+/* 80. Salesforce */
+.btn-salesforce {
+  background-color: #00A1E0;
+  color: white;
+}
+/* 81. Intel */
+.btn-intel {
+  background-color: #0071C5;
+  color: white;
+}
+
+/* 82. Hugo Boss */
+.btn-hugo-boss {
+  background-color: #000000;
+  color: white;
+}
+
+/* 83. Unilever */
+.btn-unilever {
+  background-color: #1C2A39;
+  color: white;
+}
+
+/* 84. Procter & Gamble */
+.btn-procter-e-gamble {
+  background-color: #00468C;
+  color: white;
+}
+
+/* 85. Ikea */
+.btn-ikea {
+  background-color: #FFCC00;
+  color: #003399;
+}
+
+/* 86. Kraft */
+.btn-kraft {
+  background-color: #00539F;
+  color: white;
+}
+
+/* 87. Kellogg's */
+.btn-kelloggs {
+  background-color: #FF0000;
+  color: white;
+}
+
+/* 88. Gillette */
+.btn-gillette {
+  background-color: #0000FF;
+  color: white;
+}
+
+/* 89. Johnson & Johnson */
+.btn-johnson-e-johnson {
+  background-color: #D51920;
+  color: white;
+}
+
+/* 90. Colgate */
+.btn-colgate {
+  background-color: #FF0000;
+  color: white;
+}
+
+/* 91. Philips */
+.btn-philips {
+  background-color: #0E5FD8;
+  color: white;
+}
+
+/* 92. Cisco */
+.btn-cisco {
+  background-color: #1BA0D7;
+  color: white;
+}
+
+/* 93. 3M */
+.btn-3m {
+  background-color: #FF0000;
+  color: white;
+}
+
+/* 94. Dell */
+.btn-dell {
+  background-color: #008080;
+  color: white;
+}
+
+/* 95. HP (Hewlett-Packard) */
+.btn-hp {
+  background-color: #0096D6;
+  color: white;
+}
+
+/* 96. DHL */
+.btn-dhl {
+  background-color: #FFCC00;
+  color: #D2002E;
+}
+
+/* 97. Western Union */
+.btn-western-union {
+  background-color: #FFDD00;
+  color: #003087;
+}
+
+/* 98. HSBC */
+.btn-hsbc {
+  background-color: #DB0011;
+  color: white;
+}
+
+/* 99. JPMorgan Chase */
+.btn-jpmorgan-chase {
+  background-color: #0F2D5B;
+  color: white;
+}
+
+/* 100. LinkedIn */
+.btn-linkedin {
+  background-color: #0A66C2;
+  color: white;
+}
+/* 101. Pier */
+.btn-pier {
+  background-color: pink;
+  color: white;
 }
