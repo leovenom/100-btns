@@ -994,19 +994,19 @@ a {
 }
 /* 101. Pier */
 .btn-pier {
-  border: none;
   background: rgb(255, 103, 142);
   border-radius: 4px;
   color: white;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 0px;
+  line-height: 1;
   transition: background 0.3s ease 0s;
   overflow: hidden;
   transform: translate3d(0px, 0px, 0px);
   font-family: Heebo, -apple-system, BlinkMacSystemFont, sans-serif,
     "Segoe UI Symbol";
+
 }
 .btn-pier:hover {
   background: rgb(255, 179, 199);
