@@ -115,7 +115,7 @@ export const brands = [
   },
   {
     name: "Prada",
-    llink: "https://www.prada.com",
+    link: "https://www.prada.com",
   },
   {
     name: "Zara",

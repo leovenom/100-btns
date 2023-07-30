@@ -156,8 +156,17 @@ a {
 
 /* 6. Toyota */
 .btn-toyota {
-  background-color: #000000;
-  color: white;
+  background-color: #fff;
+  border-style: solid;
+  color: #000;
+  border-width: 1px;
+  border-color: #000;
+  padding: 9pt 2pc;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .3s;
+  font-family: tcomMed,HelveticaNeueMedium,Helvetica Neue Medium,Arial,sans-serif;
+  border-radius: 50px;
 }
 
 /* 7. Facebook */

@@ -9,8 +9,7 @@ function formatBrandName(brandName) {
     .replace(/-+/g, "-") // replace consecutive hyphens with one
     .replace(/^-|-$/g, ""); // remove leading and trailing hyphens
 }
-
-function BrandButton({ brand, logo, link }) {
+function BrandButton({ brand, link }) {
   return (
     <a
       className={`btn btn-${formatBrandName(brand)}`}
