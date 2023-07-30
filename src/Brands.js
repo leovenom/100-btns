@@ -97,9 +97,9 @@ export const brands = [
     link: "https://www.nestle.com",
   },
   {
-    name: "General Electric",
+    name: "SOTHEBY'S",
 
-    link: "https://www.ge.com",
+    link: "https://www.sothebysrealty.com/",
   },
   {
     name: "Ford",
@@ -167,8 +167,8 @@ export const brands = [
     llink: "https://www.shell.com",
   },
   {
-    name: "BP",
-    link: "https://www.bp.com",
+    name: "nvidia",
+    link: "https://www.nvidia.com/",
   },
   {
     name: "Chevron",
@@ -221,8 +221,8 @@ export const brands = [
     link: "https://www.zoom.com",
   },
   {
-    name: "Snapchat",
-    link: "https://www.snapchat.com",
+    name: "Discord",
+    link: "https://discord.com/",
   },
   {
     name: "Subway",
@@ -233,8 +233,8 @@ export const brands = [
     link: "https://www.dominos.com",
   },
   {
-    name: "Budweiser",
-    link: "https://www.budweiser.com",
+    name: "Stack Overflow",
+    link: "https://stackoverflow.com/",
   },
   {
     name: "Red Bull",
@@ -272,8 +272,8 @@ export const brands = [
     link: "https://www.dolcegabbana.com",
   },
   {
-    name: "Burberry",
-    link: "https://www.burberry.com",
+    name: "Burguer King",
+    link: "https://www.bk.com/",
   },
   {
     name: "Chanel",
